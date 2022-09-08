@@ -3,8 +3,7 @@
 /* main - Print the string in the function
  *
  * Description: using the main function 
- * this program prints "and that piece of art is useful" - Dora Korpar, 2015-10-19"
- * followed by a new line, to standard error.
+ * this program prints "programming is like a building multilingual function    
  * Return: Always 1 (succes)
  */
 int main(void)
