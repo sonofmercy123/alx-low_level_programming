@@ -6,7 +6,7 @@
  * main - print the string in the function
  * 
  * Discription: using the main function
- * this program prints "and that piece of art is useful
+ * this program prints "programming is like a building multilingual function
  * Return: 1
  */   
 int main(void)
