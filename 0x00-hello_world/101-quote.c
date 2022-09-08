@@ -5,7 +5,7 @@
 /**
  * main - print the string in the function
  * 
- * Discription: using the min function
+ * Discription: using the main function
  * this program prints "and that piece of art is useful
  * Return: 1
  */   
