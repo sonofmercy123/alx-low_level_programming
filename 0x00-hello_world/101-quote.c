@@ -3,10 +3,11 @@
 #include <unistd.h>
 
 /**
- *
- * main - Entry point
+ * main - print the string in the function
  * 
- * Return: Always 0 (Success)
+ * Discription: using the min function
+ * this program prints "and that piece of art is useful
+ * Return: 1
  */   
 int main(void)
 {
