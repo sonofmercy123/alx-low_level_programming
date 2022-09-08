@@ -1,0 +1,2 @@
+#!/bin/bash
+nggc -E $CFILE -o C
