@@ -1,10 +1,8 @@
 #include "main"
 
-/**
- * main - print putchar
- * Return: always 0
- */
-
+/** main - prints putchar
+* Return: always 0
+*/
 int main(void)
 {
 	_putchar('_');
@@ -18,3 +16,4 @@ int main(void)
 	_putchar('\n');
 
 	return (0);
+}
