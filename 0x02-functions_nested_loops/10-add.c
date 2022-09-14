@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* add –> Adds two integers
+* main - declares local variables num1, num2 and computes num1 + num2
 * @num1: The first integer to be added.
 * @num2: The second integer to be added.
 *
