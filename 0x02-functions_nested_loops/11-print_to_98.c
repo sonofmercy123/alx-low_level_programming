@@ -2,7 +2,7 @@
 
 /**
 * print_to_98 –> Prints all natural numbers from input to 98,
-* @n: The number to begin counting at.
+* @n: the number to start counting from to 98
 * Return: void returns nothing.
 */
 void print_to_98(int n)
