@@ -7,16 +7,16 @@
 */
 void print_to_98(int n)
 {
-If (n >= 98)
+if (n >= 98)
 {
-While (n > 98)
-Printf(“%d, “, n--);
-Printf(“%d\n”, n);
+while (n > 98)
+printf("%d, ", n--);
+printf("%d\n", n);
 }
-Else
+else
 {
-While (n < 98)
-Printf(“%d, “, n++);
-Printf(“%d\n”, n);
+while (n < 98)
+printf("%d, ", n++);
+printf("%d\n", n);
 }
 }
