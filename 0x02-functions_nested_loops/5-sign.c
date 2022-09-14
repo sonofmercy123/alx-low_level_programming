@@ -4,19 +4,19 @@
 * @n: is the int that will use for the argument of the function
 * Return: 0
 */
-Int print_sign(int n)
+int print_sign(int n)
 {
-If (n > 0)
+if (n > 0)
 {
 _putchar(‘+’);
 Return (1);
 }
-Else if (n < 0)
+else if (n < 0)
 {
 _putchar(‘-‘);
 Return (-1);
 }
-Else
+else
 {
 _putchar(‘0’);
 Return (0);
