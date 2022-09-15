@@ -1,4 +1,3 @@
-0-isupper.c
 #include "main.h"
 #include <ctype.h>
 
