@@ -1,22 +1,25 @@
 #include <stdio.h>
 #include "main.h"
 
-/**
- * puts2 - prints every other character
- * @str: string
- *
- * Return: nothing
- */
-
-void puts2(char *str)
+*/
+void rev_string(char *s)
 {
-	int i = 0;
+	int i, j;
+	char r[1000];
 
-	while (*(str + i) != '\0')
+
+	i = j = 0;
+	while (s[i] != '\0')
 	{
-		if (i % 2 == 0)
-			putchar(*(str + i));
+		r[i] = s[i];
 		i++;
 	}
-	putchar(10);
+	i--;
+	while (i >= 0)
+	{
+		s[i] = r[j];
+		i--;
+		j++;
+	}
+	s[j++] = '\0';
 }
