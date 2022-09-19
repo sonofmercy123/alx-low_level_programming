@@ -1,4 +1,4 @@
-#import "main.h"
+#import "holberton.h"
 /**
  * main -
  * Return:
