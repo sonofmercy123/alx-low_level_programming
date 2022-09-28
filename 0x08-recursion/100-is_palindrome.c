@@ -1,8 +1,3 @@
-/*                                                                                                                                    
- * File: 100-is_palindrome.c                                                                                                          
- * Auth: sami                                                                                                                         
- */                                                                                                                                   
-                                                                                                                                      
 #include "main.h"                                                                                                                     
                                                                                                                                       
 int find_strlen(char *s);                                                                                                             
@@ -26,4 +21,4 @@ int find_strlen(char *s)
         }                                                                                                                             
                                                                                                                                       
         return (len);                                                                                                                 
-}
+}                                                                                                   
