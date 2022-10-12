@@ -1,55 +1,37 @@
+#include "3-calc.h"
 /**
- * op_add - Adds two integers
- * @a: first addend
- * @b: second addend
- *
- * Return: sum
+ * main - performs simple operations
+ * @argc: number of arguments
+ * @argv: argument vector
+ * Return: 0 for success, 98, 99, 100 for error
  */
-int op_add(int a, int b)
+int main(int argc, char *argv[])
 {
-	return (a + b);
-}
-/**
- * op_sub - Subtracts two integers
- * @a: first number to subtract
- * @b: second number to subtract
- *
- * Return: difference
- */
-int op_sub(int a, int b)
-{
-	return (a - b);
-}
-/**
- * op_mul - Multiplies two integers
- * @a: first number to multiply
- * @b: second number to multiply
- *
- * Return: product
- */
-int op_mul(int a, int b)
-{
-	return (a * b);
-}
-/**
- * op_div - Divide two integers
- * @a: first number to divide
- * @b: second number to divide
- *
- * Return: quotient
- */
-int op_div(int a, int b)
-{
-	return (a / b);
-}
-/**
- * op_mod - finds the remainder of the division of two ints
- * @a: first number
- * @b: second second number
- *
- * Return: remainder
- */
-int op_mod(int a, int b)
-{
-	return (a % b);
+	int (*newop)(int, int);
+	int (*checker)(int, int);
+	int num1, num2;
+
+	if (argc != 4)
+	{
+		printf("Error\n");
+		exit(98);
+	}
+	checker = get_op_func(argv[2]);
+	if (checker == NULL)
+	{
+		printf("Error\n");
+		exit(99);
+	}
+	if ((argv[2][0] == '/' && atoi(argv[3]) == 0)
+	    || (argv[2][0] == '%' && atoi(argv[3]) == 0))
+	{
+		printf("Error\n");
+		exit(100);
+	}
+
+	newop = get_op_func(argv[2]);
+	num1 = atoi(argv[1]);
+	num2 = atoi(argv[3]);
+	printf("%i\n", newop(num1, num2));
+	return (0);
 }
