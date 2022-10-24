@@ -21,4 +21,5 @@ size_t print_listint_safe(const listint_t *head)
 		counter++;
 		printf("-> [%p] %d\n", (void *) head->next, head->next->n);
 	}
-	return (coun
+	return (counter);
+}
